@@ -7,7 +7,9 @@ O projeto apresenta uma interface moderna e elegante, com informações sobre se
 
 ## 🌐 Projeto online
 
-O link do site será adicionado após a publicação no GitHub Pages.
+**Acesse o site publicado:**
+
+https://jefersonalvesrs.github.io/barbearia-dom/
 
 ## 🖼️ Pré-visualização
 
