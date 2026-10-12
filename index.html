@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151411" />
+    <meta
+      name="description"
+      content="Barbearia Dom — cortes clássicos, barba e estilo em um ambiente exclusivo. Agende seu horário."
+    />
+    <title>Barbearia Dom | Tradição & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header" id="inicio">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand" aria-label="Barbearia Dom, início"
+          ><span class="brand-mark">D<span>.</span></span
+          ><span class="brand-text">BARBEARIA <strong>DOM</strong></span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="menu" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a
+          ><a href="#galeria">Galeria</a><a href="#avaliacoes">Avaliações</a
+          ><a href="#contato">Contato</a>
+          <a class="btn btn-small" href="#agendar"
+            >Agendar horário <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-photo"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <span class="eyebrow"
+            ><span class="line"></span> MAIS QUE UM CORTE. UMA
+            EXPERIÊNCIA.</span
+          >
+          <h1 id="hero-title">Seu estilo.<br /><em>Nossa tradição.</em></h1>
+          <p>
+            Precisão em cada detalhe, atendimento de verdade e um espaço feito
+            para você sair na sua melhor versão.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#agendar"
+              >Agende seu horário <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#servicos"
+              >Conheça nossos serviços <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-bottom">
+            <span>ESTILO QUE ATRAVESSA GERAÇÕES</span>
+          </div>
+        </div>
+      </section>
+      <div class="highlights">
+        <div class="container highlights-inner">
+          <span>✦ ATENDIMENTO PERSONALIZADO</span
+          ><span>✦ PROFISSIONAIS EXPERIENTES</span
+          ><span>✦ AMBIENTE EXCLUSIVO</span>
+        </div>
+      </div>
+      <section class="section about" id="sobre">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="imagens/sobre.jpg"
+              alt="Barbeiro trabalhando com atenção aos detalhes"
+              loading="lazy"
+            />
+            <div class="image-stamp">ESTILO<br />SEM<br />PRESSA.</div>
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow">QUEM SOMOS</span>
+            <h2>Tradição no corte.<br /><em>Atitude no estilo.</em></h2>
+            <p>
+              Na Barbearia Dom, acreditamos que um bom corte vai muito além da
+              aparência. É sobre confiança, identidade e o cuidado que faz a
+              diferença.
+            </p>
+            <p>
+              Unimos técnicas clássicas, tendências atuais e um atendimento
+              próximo para transformar cada visita em um momento só seu.
+            </p>
+            <div class="about-features">
+              <div>
+                <span>Precisão em cada detalhe</span>
+              </div>
+              <div>
+                <span>Experiência personalizada</span>
+              </div>
+              <div>
+                <span>Seu estilo em primeiro lugar</span>
+              </div>
+            </div>
+            <a href="#agendar" class="text-link dark"
+              >Viva essa experiência <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section services" id="servicos">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">02 / NOSSOS SERVIÇOS</span>
+              <h2>O cuidado que<br /><em>seu estilo merece.</em></h2>
+            </div>
+            <p>
+              Do clássico ao contemporâneo. Escolha seu serviço e deixe o resto
+              com a gente.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service">
+              <div class="service-icon">✂</div>
+              <h3>Corte masculino</h3>
+              <p>Do degradê ao corte clássico, com acabamento impecável.</p>
+              <div class="service-footer">
+                <strong>R$ 45</strong
+                ><button
+                  class="service-book"
+                  data-service="Corte masculino"
+                  aria-label="Agendar corte masculino"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service-icon">⌁</div>
+              <h3>Barba completa</h3>
+              <p>
+                Desenho, toalha quente e finalização para uma barba perfeita.
+              </p>
+              <div class="service-footer">
+                <strong>R$ 35</strong
+                ><button
+                  class="service-book"
+                  data-service="Barba completa"
+                  aria-label="Agendar barba completa"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service-icon">✦</div>
+              <h3>Corte + barba</h3>
+              <p>O combo completo para renovar o visual com personalidade.</p>
+              <div class="service-footer">
+                <strong>R$ 70</strong
+                ><button
+                  class="service-book"
+                  data-service="Corte e barba"
+                  aria-label="Agendar corte e barba"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service-icon">◇</div>
+              <h3>Acabamento</h3>
+              <p>Contornos, pezinho e detalhes para manter o estilo em dia.</p>
+              <div class="service-footer">
+                <strong>R$ 20</strong
+                ><button
+                  class="service-book"
+                  data-service="Acabamento"
+                  aria-label="Agendar acabamento"
+                >
+                  ↗
+                </button>
+              </div>
+            </article>
+          </div>
+          <p class="services-note">
+            * Valores ilustrativos. Consulte os preços atuais pelo WhatsApp.
+          </p>
+        </div>
+      </section>
+      <section class="section gallery" id="galeria">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">NOSSO UNIVERSO</span>
+              <h2>Detalhes que<br /><em>fazem a diferença.</em></h2>
+            </div>
+            <p>
+              Um espaço pensado para quem valoriza qualidade, personalidade e
+              autenticidade.
+            </p>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item gallery-large">
+              <img
+                src="imagens/galeria-1.jpg"
+                alt="Barbeiro realizando corte masculino"
+                loading="lazy"
+              /><span>PRECISÃO</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="imagens/galeria-3.jpg"
+                alt="Detalhes de uma barbearia"
+                loading="lazy"
+              /><span>TRADIÇÃO</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="imagens/galeria-2.jpg"
+                alt="Equipamentos e ambiente de barbearia"
+                loading="lazy"
+              /><span>ESTILO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote-section" id="avaliacoes">
+        <div class="container quote-inner">
+          <span class="eyebrow">O QUE DIZEM SOBRE NÓS</span>
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote>
+            “Um lugar onde cada detalhe importa. Atendimento de primeira,
+            ambiente incrível e um corte que realmente faz a diferença.”
+          </blockquote>
+          <p>— DEPOIMENTO ILUSTRATIVO</p>
+          <div class="quote-dots" aria-hidden="true">
+            <span class="active"></span><span></span><span></span>
+          </div>
+        </div>
+      </section>
+      <section class="section contact" id="contato">
+        <div class="container contact-grid">
+          <div>
+            <span class="eyebrow">VENHA NOS VISITAR</span>
+            <h2>Seu próximo corte<br /><em>começa aqui.</em></h2>
+            <p>
+              Um novo visual está a uma mensagem de distância. Fale com a gente
+              e reserve seu horário.
+            </p>
+            <div class="contact-list">
+              <div>
+                <span>ENDEREÇO</span
+                ><strong
+                  >Rua Exemplo, 123 — Centro<br />Caxias do Sul, RS</strong
+                >
+              </div>
+              <div>
+                <span>HORÁRIOS</span
+                ><strong
+                  >Segunda a sexta: 09h às 19h<br />Sábado: 09h às 17h</strong
+                >
+              </div>
+              <div>
+                <span>CONTATO</span
+                ><strong id="phone-display">(54) 99999-9999</strong>
+              </div>
+            </div>
+          </div>
+          <div class="booking-card" id="agendar">
+            <span class="eyebrow">AGENDE SEU HORÁRIO</span>
+            <h3>Seu momento.<br /><em>Seu estilo.</em></h3>
+            <p>
+              Escolha o serviço e envie uma mensagem. Confirmamos a
+              disponibilidade diretamente pelo WhatsApp.
+            </p>
+            <form id="booking-form">
+              <label for="booking-service">Serviço desejado</label
+              ><select id="booking-service" required>
+                <option value="">Selecione um serviço</option>
+                <option>Corte masculino</option>
+                <option>Barba completa</option>
+                <option>Corte e barba</option>
+                <option>Acabamento</option></select
+              ><label for="booking-name">Seu nome</label
+              ><input
+                id="booking-name"
+                type="text"
+                maxlength="80"
+                placeholder="Como podemos chamar você?"
+                required
+              /><button class="btn" type="submit">
+                Solicitar pelo WhatsApp <span aria-hidden="true">↗</span>
+              </button>
+              <p class="booking-hint">
+                Você será direcionado ao WhatsApp para enviar a solicitação.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-top">
+        <div>
+          <a href="#inicio" class="brand"
+            ><span class="brand-mark">D<span>.</span></span
+            ><span class="brand-text">BARBEARIA <strong>DOM</strong></span></a
+          >
+          <p>Tradição, atitude e estilo em cada detalhe.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a
+          ><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year"></span> Barbearia Dom. Todos os direitos
+          reservados.</span
+        ><span>PROJETO DEMONSTRATIVO · PORTFÓLIO</span>
+      </div>
+    </footer>
+    <a href="#agendar" class="floating-book" aria-label="Agendar horário"
+      >✆ <span>Agendar</span></a
+    >
+  </body>
+</html>
