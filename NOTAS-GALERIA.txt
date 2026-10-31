@@ -1,0 +1,8 @@
+BARBEARIA DOM V3 — GALERIAS ATUALIZADAS
+
+Plano Profissional: 8 imagens demonstrativas distintas, salvas fisicamente em profissional/imagens/.
+Plano Completo: 20 imagens demonstrativas distintas, salvas fisicamente em completo/imagens/.
+O menu Galeria do Completo abre diretamente completo/galeria.html, com filtros funcionais por Ambiente, Barbeiros, Cortes de cabelo e Barba.
+A página principal do Completo exibe uma prévia e botão para abrir a galeria completa.
+As imagens são ilustrativas, geradas para esta demonstração, e devem ser substituídas por fotografias autorizadas do cliente em projetos reais.
+Não são links externos.

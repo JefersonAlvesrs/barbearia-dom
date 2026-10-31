@@ -1,180 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="#151411" name="theme-color"/>
-<meta content="Barbearia Dom — cortes clássicos, barba e estilo em um ambiente exclusivo. Agende seu horário." name="description"/>
-<title>Barbearia Dom | Demonstração Essencial</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
-<link href="extras.css" rel="stylesheet"/><script defer="True" src="extras.js"></script><style>.social-demo{background:#191713;color:#f4dfbb;text-align:center;padding:28px 12px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font:600 13px Arial}.social-demo button{background:transparent;border:1px solid #c9a16b;border-radius:7px;padding:12px 18px;color:#f4dfbb;cursor:pointer}.floating-wa{position:fixed;right:22px;bottom:22px;z-index:80;background:#25d366;color:#fff;display:flex;align-items:center;gap:9px;padding:12px 16px;border-radius:100px;font:700 14px Arial;text-decoration:none;box-shadow:0 5px 22px #0007}.floating-wa svg{width:24px;height:24px}.demo-modal{position:fixed;inset:0;background:#000b;display:grid;place-items:center;z-index:10001;padding:18px}.demo-modal>div{background:#26211b;border:1px solid #c7a16a;color:white;border-radius:12px;max-width:450px;padding:25px;line-height:1.6}.demo-modal button{background:#c7a16a;color:#17140f;border:0;padding:12px 22px;border-radius:6px;cursor:pointer}</style></head>
-<body><div class="demo-ribbon">SITE FICTÍCIO • PLANO ESSENCIAL — R$ 590 • <a href="../index.html">Comparar os 3 planos ↗</a></div><div class="site-plan-nav">Conheça também: <a href="../essencial/index.html">Essencial</a> · <a href="../profissional/index.html">Profissional</a> · <a href="../completo/index.html">Completo</a></div>
-<header class="header" id="inicio">
-<div class="container header-inner">
-<a aria-label="Barbearia Dom, início" class="brand" href="#inicio"><span class="brand-mark">D<span>.</span></span><span class="brand-text">BARBEARIA <strong>DOM</strong></span></a>
-<button aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" class="menu-toggle">
-<span></span><span></span><span></span>
-</button>
-<nav aria-label="Navegação principal" class="nav" id="menu">
-<a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#contato">Galeria</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a>
-<a class="btn btn-small" href="#contato">Agendar horário <span aria-hidden="true">↗</span></a>
-</nav>
-</div>
-</header>
-<main>
-<section aria-labelledby="hero-title" class="hero">
-<div class="hero-photo"></div>
-<div class="hero-shade"></div>
-<div class="container hero-content">
-<span class="eyebrow"><span class="line"></span> MAIS QUE UM CORTE. UMA
-            EXPERIÊNCIA.</span>
-<h1 id="hero-title">Seu estilo.<br/><em>Nossa tradição.</em></h1>
-<p>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#151411" name="theme-color" />
+    <meta
+      content="Barbearia Dom — cortes clássicos, barba e estilo em um ambiente exclusivo. Agende seu horário."
+      name="description"
+    />
+    <title>Barbearia Dom | Demonstração Essencial</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="script.js"></script>
+    <link href="extras.css" rel="stylesheet" />
+    <script defer="True" src="extras.js"></script>
+    <style>
+      .social-demo {
+        background: #191713;
+        color: #f4dfbb;
+        text-align: center;
+        padding: 28px 12px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font: 600 13px Arial;
+      }
+      .social-demo button {
+        background: transparent;
+        border: 1px solid #c9a16b;
+        border-radius: 7px;
+        padding: 12px 18px;
+        color: #f4dfbb;
+        cursor: pointer;
+      }
+      .floating-wa {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        z-index: 80;
+        background: #25d366;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 12px 16px;
+        border-radius: 100px;
+        font: 700 14px Arial;
+        text-decoration: none;
+        box-shadow: 0 5px 22px #0007;
+      }
+      .floating-wa svg {
+        width: 24px;
+        height: 24px;
+      }
+      .demo-modal {
+        position: fixed;
+        inset: 0;
+        background: #000b;
+        display: grid;
+        place-items: center;
+        z-index: 10001;
+        padding: 18px;
+      }
+      .demo-modal > div {
+        background: #26211b;
+        border: 1px solid #c7a16a;
+        color: white;
+        border-radius: 12px;
+        max-width: 450px;
+        padding: 25px;
+        line-height: 1.6;
+      }
+      .demo-modal button {
+        background: #c7a16a;
+        color: #17140f;
+        border: 0;
+        padding: 12px 22px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-ribbon">
+      SITE FICTÍCIO • PLANO ESSENCIAL — R$ 590 •
+      <a href="../index.html">Comparar os 3 planos ↗</a>
+    </div>
+    <div class="site-plan-nav">
+      Conheça também: <a href="../essencial/index.html">Essencial</a> ·
+      <a href="../profissional/index.html">Profissional</a> ·
+      <a href="../completo/index.html">Completo</a>
+    </div>
+    <header class="header" id="inicio">
+      <div class="container header-inner">
+        <a aria-label="Barbearia Dom, início" class="brand" href="#inicio"
+          ><span class="brand-mark">D<span>.</span></span
+          ><span class="brand-text">BARBEARIA <strong>DOM</strong></span></a
+        >
+        <button
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="menu-toggle"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Navegação principal" class="nav" id="menu">
+          <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a
+          ><a href="#contato">Contato</a>
+          <a class="btn btn-small" href="#contato"
+            >Entrar em contato <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section aria-labelledby="hero-title" class="hero">
+        <div class="hero-photo"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <span class="eyebrow"
+            ><span class="line"></span> MAIS QUE UM CORTE. UMA
+            EXPERIÊNCIA.</span
+          >
+          <h1 id="hero-title">Seu estilo.<br /><em>Nossa tradição.</em></h1>
+          <p>
             Precisão em cada detalhe, atendimento de verdade e um espaço feito
             para você sair na sua melhor versão.
           </p>
-<div class="hero-actions">
-<a class="btn" href="#contato">Fale com a barbearia ↗</a><a class="text-link" href="#servicos">Conheça nossos serviços <span aria-hidden="true">↓</span></a>
-</div>
-<div class="hero-bottom">
-<span>ESTILO QUE ATRAVESSA GERAÇÕES</span>
-</div>
-</div>
-</section>
-<div class="highlights">
-<div class="container highlights-inner">
-<span>✦ ATENDIMENTO PERSONALIZADO</span><span>✦ PROFISSIONAIS EXPERIENTES</span><span>✦ AMBIENTE EXCLUSIVO</span>
-</div>
-</div>
-<section class="section about" id="sobre">
-<div class="container about-grid">
-<div class="about-image">
-<img alt="Barbeiro trabalhando com atenção aos detalhes" loading="lazy" src="imagens/sobre.jpg"/>
-<div class="image-stamp">ESTILO<br/>SEM<br/>PRESSA.</div>
-</div>
-<div class="about-copy">
-<span class="eyebrow">QUEM SOMOS</span>
-<h2>Tradição no corte.<br/><em>Atitude no estilo.</em></h2>
-<p>
+          <div class="hero-actions">
+            <a class="btn" href="#contato">Fale com a barbearia ↗</a
+            ><a class="text-link" href="#servicos"
+              >Conheça nossos serviços <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-bottom">
+            <span>ESTILO QUE ATRAVESSA GERAÇÕES</span>
+          </div>
+        </div>
+      </section>
+      <div class="highlights">
+        <div class="container highlights-inner">
+          <span>✦ ATENDIMENTO PERSONALIZADO</span
+          ><span>✦ PROFISSIONAIS EXPERIENTES</span
+          ><span>✦ AMBIENTE EXCLUSIVO</span>
+        </div>
+      </div>
+      <section class="section about" id="sobre">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              alt="Barbeiro trabalhando com atenção aos detalhes"
+              loading="lazy"
+              src="imagens/sobre.jpg"
+            />
+            <div class="image-stamp">ESTILO<br />SEM<br />PRESSA.</div>
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow">QUEM SOMOS</span>
+            <h2>Tradição no corte.<br /><em>Atitude no estilo.</em></h2>
+            <p>
               Na Barbearia Dom, acreditamos que um bom corte vai muito além da
               aparência. É sobre confiança, identidade e o cuidado que faz a
               diferença.
             </p>
-<p>
+            <p>
               Unimos técnicas clássicas, tendências atuais e um atendimento
               próximo para transformar cada visita em um momento só seu.
             </p>
-<div class="about-features">
-<div>
-<span>Precisão em cada detalhe</span>
-</div>
-<div>
-<span>Experiência personalizada</span>
-</div>
-<div>
-<span>Seu estilo em primeiro lugar</span>
-</div>
-</div>
-<a class="text-link dark" href="#contato">Viva essa experiência <span aria-hidden="true">↗</span></a>
-</div>
-</div>
-</section>
-<section class="section services" id="servicos">
-<div class="container">
-<div class="section-heading">
-<div>
-<span class="eyebrow">02 / NOSSOS SERVIÇOS</span>
-<h2>O cuidado que<br/><em>seu estilo merece.</em></h2>
-</div>
-<p>
+            <div class="about-features">
+              <div>
+                <span>Precisão em cada detalhe</span>
+              </div>
+              <div>
+                <span>Experiência personalizada</span>
+              </div>
+              <div>
+                <span>Seu estilo em primeiro lugar</span>
+              </div>
+            </div>
+            <a class="text-link dark" href="#contato"
+              >Viva essa experiência <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section services" id="servicos">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">02 / NOSSOS SERVIÇOS</span>
+              <h2>O cuidado que<br /><em>seu estilo merece.</em></h2>
+            </div>
+            <p>
               Do clássico ao contemporâneo. Escolha seu serviço e deixe o resto
               com a gente.
             </p>
-</div>
-<div class="services-grid">
-<article class="service">
-<div class="service-icon">✂</div>
-<h3>Corte masculino</h3>
-<p>Do degradê ao corte clássico, com acabamento impecável.</p>
-<div class="service-footer">
-<strong>R$ 45</strong>
-</div>
-</article>
-<article class="service">
-<div class="service-icon">⌁</div>
-<h3>Barba completa</h3>
-<p>
+          </div>
+          <div class="services-grid">
+            <article class="service">
+              <div class="service-icon">✂</div>
+              <h3>Corte masculino</h3>
+              <p>Do degradê ao corte clássico, com acabamento impecável.</p>
+              <div class="service-footer">
+                <strong>R$ 45</strong>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service-icon">⌁</div>
+              <h3>Barba completa</h3>
+              <p>
                 Desenho, toalha quente e finalização para uma barba perfeita.
               </p>
-<div class="service-footer">
-<strong>R$ 35</strong>
-</div>
-</article>
-<article class="service">
-<div class="service-icon">✦</div>
-<h3>Corte + barba</h3>
-<p>O combo completo para renovar o visual com personalidade.</p>
-<div class="service-footer">
-<strong>R$ 70</strong>
-</div>
-</article>
-<article class="service">
-<div class="service-icon">◇</div>
-<h3>Acabamento</h3>
-<p>Contornos, pezinho e detalhes para manter o estilo em dia.</p>
-<div class="service-footer">
-<strong>R$ 20</strong>
-</div>
-</article>
-</div>
-<p class="services-note">
+              <div class="service-footer">
+                <strong>R$ 35</strong>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service-icon">✦</div>
+              <h3>Corte + barba</h3>
+              <p>O combo completo para renovar o visual com personalidade.</p>
+              <div class="service-footer">
+                <strong>R$ 70</strong>
+              </div>
+            </article>
+            <article class="service">
+              <div class="service-icon">◇</div>
+              <h3>Acabamento</h3>
+              <p>Contornos, pezinho e detalhes para manter o estilo em dia.</p>
+              <div class="service-footer">
+                <strong>R$ 20</strong>
+              </div>
+            </article>
+          </div>
+          <p class="services-note">
             * Valores ilustrativos. Consulte os preços atuais pelo WhatsApp.
           </p>
-</div>
-</section>
-<section class="section contact" id="contato">
-<div class="container contact-grid">
-<div>
-<span class="eyebrow">VENHA NOS VISITAR</span>
-<h2>Seu próximo corte<br/><em>começa aqui.</em></h2>
-<p>
+        </div>
+      </section>
+      <section class="section contact" id="contato">
+        <div class="container contact-grid">
+          <div>
+            <span class="eyebrow">VENHA NOS VISITAR</span>
+            <h2>Seu próximo corte<br /><em>começa aqui.</em></h2>
+            <p>
               Um novo visual está a uma mensagem de distância. Fale com a gente
               e reserve seu horário.
             </p>
-<div class="contact-list">
-<div>
-<span>ENDEREÇO</span><strong>Rua Exemplo, 123 — Centro<br/>Caxias do Sul, RS</strong>
-</div>
-<div>
-<span>HORÁRIOS</span><strong>Segunda a sexta: 09h às 19h<br/>Sábado: 09h às 17h</strong>
-</div>
-<div>
-<span>CONTATO</span><strong id="phone-display">(54) 99999-9999</strong>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<div class="social-demo"><span>REDES SOCIAIS · EXEMPLO</span> <button data-social="Instagram" type="button">◎ Instagram</button> <button data-social="Facebook" type="button">f Facebook</button></div><footer class="footer">
-<div class="container footer-top">
-<div>
-<a class="brand" href="#inicio"><span class="brand-mark">D<span>.</span></span><span class="brand-text">BARBEARIA <strong>DOM</strong></span></a>
-<p>Tradição, atitude e estilo em cada detalhe.</p>
-</div>
-<div class="footer-links">
-<a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#contato">Galeria</a><a href="#contato">Contato</a>
-</div>
-</div>
-<div class="container footer-bottom">
-<span>© <span id="year"></span> Barbearia Dom. Todos os direitos
-          reservados.</span><span>PROJETO DEMONSTRATIVO · PORTFÓLIO</span>
-</div>
-</footer>
-<script>document.querySelectorAll('[data-social]').forEach(b=>b.addEventListener('click',()=>{const modal=document.createElement('div');modal.className='demo-modal';modal.innerHTML='<div role="dialog" aria-modal="true"><h3>Rede social demonstrativa</h3><p>Este é um site fictício. No projeto contratado, o botão abrirá o perfil real do estabelecimento.</p><button>Entendi</button></div>';document.body.append(modal);modal.querySelector('button').onclick=()=>modal.remove();modal.onclick=e=>{if(e.target===modal)modal.remove()}}));</script></body>
+            <div class="contact-list">
+              <div>
+                <span>ENDEREÇO</span
+                ><strong
+                  >Rua Exemplo, 123 — Centro<br />Caxias do Sul, RS</strong
+                >
+              </div>
+              <div>
+                <span>HORÁRIOS</span
+                ><strong
+                  >Segunda a sexta: 09h às 19h<br />Sábado: 09h às 17h</strong
+                >
+              </div>
+              <div>
+                <span>CONTATO</span
+                ><strong id="phone-display">(54) 99999-9999</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="social-demo">
+      <span>REDES SOCIAIS · EXEMPLO</span>
+      <button data-social="Instagram" type="button">◎ Instagram</button>
+      <button data-social="Facebook" type="button">f Facebook</button>
+    </div>
+    <footer class="footer">
+      <div class="container footer-top">
+        <div>
+          <a class="brand" href="#inicio"
+            ><span class="brand-mark">D<span>.</span></span
+            ><span class="brand-text">BARBEARIA <strong>DOM</strong></span></a
+          >
+          <p>Tradição, atitude e estilo em cada detalhe.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a
+          ><a href="#contato">Contato</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year"></span> Barbearia Dom. Todos os direitos
+          reservados.</span
+        ><span>PROJETO DEMONSTRATIVO · PORTFÓLIO</span>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll("[data-social]").forEach((b) =>
+        b.addEventListener("click", () => {
+          const modal = document.createElement("div");
+          modal.className = "demo-modal";
+          modal.innerHTML =
+            '<div role="dialog" aria-modal="true"><h3>Rede social demonstrativa</h3><p>Este é um site fictício. No projeto contratado, o botão abrirá o perfil real do estabelecimento.</p><button>Entendi</button></div>';
+          document.body.append(modal);
+          modal.querySelector("button").onclick = () => modal.remove();
+          modal.onclick = (e) => {
+            if (e.target === modal) modal.remove();
+          };
+        }),
+      );
+    </script>
+  </body>
 </html>
