@@ -1,0 +1,11 @@
+BARBEARIA DOM — 3 MODELOS / V2
+
+Abra index.html para comparar os planos.
+Essencial: R$590 / Profissional: R$890 / Completo: R$1190.
+
+No Completo, visite a seção Solicite seu horário. Ela calcula os serviços, valida a data e prepara a mensagem, mas não envia WhatsApp pois é uma demonstração fictícia.
+Os links de Instagram e Facebook são demonstrações; configure os perfis reais do cliente ao vender.
+Sem backend, não existe disponibilidade em tempo real, confirmação de agendamento, pagamentos ou fidelidade automática.
+Antes de publicar para clientes, substituir fotos, contatos, informações, preços e depoimentos fictícios; confirmar direitos de uso das imagens.
+
+V3: Formulário do plano Completo solicita DATA e PERÍODO de preferência, sem sugerir horários livres. Não confirma reserva. Fotos continuam ilustrativas e limitadas às imagens originais; expansão da galeria ainda pendente.

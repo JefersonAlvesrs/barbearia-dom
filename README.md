@@ -1,45 +1,47 @@
+# 💈 Barbearia Dom — 3 Modelos de Sites
 
-# 💈 Barbearia Dom
+Projeto de desenvolvimento frontend que apresenta três versões de um site para barbearia, com diferentes níveis de funcionalidades, complexidade e apresentação visual.
 
-Site demonstrativo de uma barbearia, desenvolvido com HTML, CSS e JavaScript.
+O objetivo é demonstrar como um mesmo negócio pode ter soluções digitais adaptadas a diferentes necessidades e orçamentos.
 
-O projeto apresenta uma interface moderna e elegante, com informações sobre serviços, preços, galeria de imagens e agendamento por WhatsApp.
+## 🌐 Demonstração online
 
-## 🌐 Projeto online
+**[Acessar Barbearia Dom — Comparativo dos 3 planos](https://jefersonalvesrs.github.io/barbearia-dom/)**
 
-**Acesse o site publicado:**
+## 💰 Modelos disponíveis
 
-https://jefersonalvesrs.github.io/barbearia-dom/
+| Modelo       | Valor demonstrativo | Características                                                                                 |
+| ------------ | ------------------: | ----------------------------------------------------------------------------------------------- |
+| Essencial    |              R$ 590 | Site institucional com apresentação das principais informações                                  |
+| Profissional |              R$ 890 | Apresentação mais elaborada, com recursos adicionais de interface                               |
+| Completo     |            R$ 1.190 | Demonstração ampliada, com páginas adicionais e formulário interativo de solicitação de horário |
 
-## 🖼️ Pré-visualização
+Cada modelo possui sua própria demonstração navegável.
 
-### Página inicial
+### 🔹 Essencial — R$ 590
 
-![Página inicial da Barbearia Dom](assets/images/barbearia-inicio.png)
+[Visualizar modelo Essencial](https://jefersonalvesrs.github.io/barbearia-dom/essencial/)
 
-### Serviços e preços
+### 🔹 Profissional — R$ 890
 
-![Serviços da Barbearia Dom](assets/images/barbearia-servicos.png)
+[Visualizar modelo Profissional](https://jefersonalvesrs.github.io/barbearia-dom/profissional/)
 
-### Contato e agendamento
+### 🔹 Completo — R$ 1.190
 
-![Agendamento da Barbearia Dom](assets/images/barbearia-agendamento.png)
+[Visualizar modelo Completo](https://jefersonalvesrs.github.io/barbearia-dom/completo/)
 
-### Versão mobile
+## ✨ Funcionalidades e recursos
 
-![Versão mobile da Barbearia Dom](assets/images/barbearia-mobile.png)
+- Página comercial de comparação dos três modelos.
+- Três demonstrações independentes e navegáveis.
+- Layouts responsivos para computadores e dispositivos móveis.
+- Apresentação de serviços e valores.
+- Galerias de imagens ilustrativas.
+- Elementos interativos desenvolvidos em JavaScript.
+- Páginas adicionais de serviços e galeria no modelo Completo.
+- Formulário demonstrativo de solicitação de horário, com seleção de serviços, cálculo de valor estimado e preferência de data e período.
 
-## ✨ Funcionalidades
-
-- Apresentação da barbearia
-- Catálogo de serviços com preços
-- Galeria de fotografias
-- Depoimentos demonstrativos
-- Informações de endereço e horários
-- Formulário para solicitar agendamento via WhatsApp
-- Mensagem de agendamento preenchida automaticamente
-- Menu de navegação adaptado para celulares
-- Layout responsivo
+**Importante:** o formulário do modelo Completo é uma simulação frontend. Não realiza reservas reais, não consulta disponibilidade e não envia agendamentos automaticamente.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -47,48 +49,67 @@ https://jefersonalvesrs.github.io/barbearia-dom/
 - CSS3
 - JavaScript
 - Git e GitHub
-- GitHub Pages para hospedagem
+- GitHub Pages
 
 ## 📱 Responsividade
 
-O site possui layout adaptável para computadores, tablets e smartphones, com menu de navegação específico para dispositivos móveis.
-
-## 💡 O que pratiquei neste projeto
-
-- Estruturação de páginas com HTML semântico
-- Estilização e layouts com CSS
-- Responsividade com Media Queries
-- Manipulação do DOM com JavaScript
-- Formulários e eventos
-- Integração com links de WhatsApp
-- Organização de imagens e arquivos
-- Versionamento com Git
+As três versões foram desenvolvidas com foco na adaptação a diferentes tamanhos de tela, utilizando CSS responsivo e Media Queries.
 
 ## 📂 Estrutura do projeto
 
 ```text
-barbearia/
-├── assets/
-│   └── images/
-│       ├── barbearia-inicio.png
-│       ├── barbearia-servicos.png
-│       ├── barbearia-agendamento.png
-│       └── barbearia-mobile.png
-├── imagens/
-│   ├── sobre.jpg
-│   ├── galeria-1.jpg
-│   ├── galeria-2.jpg
-│   └── galeria-3.jpg
+barbearia-dom/
 ├── index.html
-├── style.css
-├── script.js
+├── essencial/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── extras.css
+│   ├── extras.js
+│   └── imagens/
+├── profissional/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── extras.css
+│   ├── extras.js
+│   └── imagens/
+├── completo/
+│   ├── index.html
+│   ├── servicos.html
+│   ├── galeria.html
+│   ├── style.css
+│   ├── script.js
+│   ├── extras.css
+│   ├── extras.js
+│   ├── agendamento.js
+│   └── imagens/
+├── LEIA-ME.txt
 └── README.md
 ```
 
+## 💡 Aprendizados e objetivos
+
+- Organização de projetos frontend com múltiplas versões.
+- Desenvolvimento de interfaces comerciais.
+- Estruturação de páginas com HTML semântico.
+- Estilização com CSS e layouts responsivos.
+- Manipulação do DOM e eventos com JavaScript.
+- Desenvolvimento de formulários interativos.
+- Reutilização e adaptação de componentes visuais.
+- Publicação de sites estáticos com GitHub Pages.
+
 ## 📌 Sobre o projeto
 
-A Barbearia Dom é um projeto fictício desenvolvido para fins de estudo, demonstração comercial e portfólio.
+A Barbearia Dom é um estabelecimento fictício utilizado para fins de portfólio, aprendizado e demonstração comercial.
 
-Os preços, endereço e depoimentos são ilustrativos. O formulário prepara uma mensagem para o WhatsApp, mas não realiza reservas automaticamente.
+Os preços apresentados são referências de planos de desenvolvimento. Os serviços, fotografias, contatos, depoimentos e demais informações do estabelecimento são ilustrativos.
 
-O site pode ser personalizado para estabelecimentos reais, com alterações de identidade visual, serviços, preços, imagens e informações de contato.
+As demonstrações não possuem backend, banco de dados, pagamentos integrados ou sistema de agendamento com confirmação automática.
+
+Uma implementação para um cliente real exigiria a personalização das informações, validação dos requisitos e configuração dos recursos contratados.
+
+---
+
+**Desenvolvido por Jeferson Alves**  
+Projeto frontend e demonstração comercial.
